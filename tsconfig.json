@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "module": "commonjs",
+    "moduleResolution": "Node",
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"],
+      "@/repositories/*": ["./repositories/*"],
+      "@controllers/*": ["./controllers/index"],
+      "@services/*": ["./services/*"],
+      "@database/*": ["./database/*"],
+      "@schemas/*": ["./schemas/*"],
+      "@routes/*": ["./routes/*"],
+      "@middlewares/*": ["./middlewares/*"],
+    },
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strictNullChecks":true,
+    "noImplicitAny":true
+  },
+  "ts-node": {
+    "esm": true
+  },
+}
