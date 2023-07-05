@@ -1,5 +1,5 @@
 import { Recipe } from '@/protocols/recipes'
-import { recipesRepository } from '../repositories/index'
+import {recipesRepository} from '@/repositories'
 import { ErrorMessage } from '@/protocols/errors'
 async function getRecipes(name: string) {
     return await recipesRepository.getRecipes(name)
